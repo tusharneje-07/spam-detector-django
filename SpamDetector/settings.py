@@ -127,4 +127,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
-print(API_KEY)
