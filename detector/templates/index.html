@@ -1023,10 +1023,10 @@
 
             postData('{% url "detector" %}', { msg: document.getElementById('myTextBox').value, key2: 'value2' }).then((data) => {
                 if (data.data){
-                    showResult(data.data,"Spam Detected!")
+                    showResult(data.data,data.msg)
                 }
                 else{
-                    showResult(data.data,"Not a Spam Message!")
+                    showResult(data.data,data.msg)
                 }
                 // Restore the button's original styles and innerHTML
                 document.getElementById('btn').classList.remove('bg-gray-800');
