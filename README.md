@@ -32,7 +32,7 @@ cd spam-detector-django
 ### Step 2: Set Up a Virtual Environment
 ```bash
 python -m venv env
-source env/bin/activate    # On Windows: env\Scripts\activate
+.\env\Scripts\activate    # On Windows: env\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
