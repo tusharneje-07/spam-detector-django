@@ -31,9 +31,9 @@ class Gemini():
             ans = jsondata['candidates'][0]['content']['parts'][0]['text']
             ans = ans.replace(' ','').replace('\n','').lower()
             if ans == 'yes':
-                return True,"Spam Message Detected!"
+                return True,"Potential Spam Message Identified."
             else:
-                return False,"Not a Spam Message."
+                return False,"Not a Spam. Authentic Message."
         except Exception as e:
             return False,str(e)
             
