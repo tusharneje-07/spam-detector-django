@@ -126,4 +126,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 load_dotenv()
-API_KEY = os.getenv('GEM_KEY')
+API_KEY = os.getenv('GEM_KEY2')
+print(API_KEY)
